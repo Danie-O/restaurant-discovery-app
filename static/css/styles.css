@@ -3,6 +3,7 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
+    --website-text: 500 100%/1.5 system-ui;
     --primary-color: rgb(143, 8, 206);
     --secondary-color: rgb(241, 117, 9);
     --tertiary-color: rgb(77, 158, 84);
@@ -32,9 +33,9 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.3em;
     font-weight: 400;
-    margin-left: 1rem;
+    margin-left: 1.2rem;
 }
 
 .navbar-ul {
@@ -73,14 +74,16 @@ a:hover {
 
 .food {
     color: var(--primary-color);
+    font-family: 'Bungee Inline', cursive;
 }
 
 .explorer {
-    color: var(--secondary-color);
+    color: black;
+    font-family: 'Bungee Inline', cursive;
 }
 
 .search {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 
 .hero {
@@ -102,6 +105,7 @@ a:hover {
 
 .hero p {
     line-height: var(--line-height);
+    color: #5b6574;
 }
 
 .anchor-text {
@@ -193,7 +197,7 @@ footer {
     border-top: 1px solid #f1f1f1;
     box-shadow: 0px -2px 3px #f1f1f1;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .footer-ul {
@@ -209,4 +213,51 @@ footer {
     margin: 0;
     padding: 0;
     margin-right: 15px;
+}
+
+.subscribe {
+    width: 450px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 40px auto;
+    font: var(--website-text);
+}
+
+.subscribe h1 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 22px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid rgb(129, 176, 133);
+}
+
+.subscribe form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.subscribe form input[type="email"], .subscribe form input[type="text"] {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.subscribe form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.subscribe form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    transition: background-color 0.2s;
 }
