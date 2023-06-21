@@ -261,3 +261,19 @@ footer {
     background-color: var(--secondary-color);
     transition: background-color 0.2s;
 }
+
+.header-text {
+    width: 650px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 40px auto;
+    font: var(--website-text);
+}
+
+.header-text h1 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid rgb(129, 176, 133);
+}
