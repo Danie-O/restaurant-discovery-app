@@ -1,0 +1,212 @@
+/* CSS Variables */
+:root {
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --primary-color: rgb(143, 8, 206);
+    --secondary-color: rgb(241, 117, 9);
+    --tertiary-color: rgb(77, 158, 84);
+    --line-height: 1.7rem;
+    --transition: 0.3s ease-in;
+}
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.navbar-ul li {
+    list-style-type: none;
+}
+
+.navbar-ul > .active > a{
+    color: var(--secondary-color);
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+  
+.nav-link {
+    font-size: large;
+    font-weight: var(--bold-font);
+    font: 500 100%/1.5 system-ui;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+  
+a:hover {
+    color: var(--secondary-color);
+} 
+
+.food {
+    color: var(--primary-color);
+}
+
+.explorer {
+    color: var(--secondary-color);
+}
+
+.search {
+    color: var(--tertiary-color);
+}
+
+.hero {
+    display: grid;
+    padding: 1.5rem;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    column-gap: 45px;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    font: 400 100%/1.0 system-ui;
+}
+
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    line-height: var(--line-height);
+}
+
+.anchor-text {
+    color: rgb(143, 8, 206);
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    background-image: url('../images/food-landing.jpg');
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+.action-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 0.8rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+.action-btn:hover {
+    background-color: var(--tertiary-color);
+    color: #fff;
+}
+
+.popular p{
+    margin-top: 1.2em;
+    font: 500 100%/1.5 system-ui;
+    font-size: var(--bold-font);
+    line-height: 2.5em;
+}
+
+hr {
+    border-style: none;
+    border-top-style: solid; 
+    border-width: 2px;
+    border-color: var(--tertiary-color);
+    height: 0px;
+    width: 15%;
+}
+
+.restaurants {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font: 500 100%/1.5 system-ui;
+}
+  
+.homepage-restaurants {
+    margin: 1rem auto;
+    max-width: 1100px;
+}
+  
+.homepage-restaurants img {
+    border-radius: 0.6rem;
+    float: left;
+    width:  250px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1em;
+    box-shadow: 2px 3px 2px var(--tertiary-color);
+}
+
+.resturants-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: var(--bold-font);
+    color: rgb(26, 25, 25);
+    text-align: center;
+  }
+  
+.category {
+    color: var(--secondary-color);
+    font-weight: var(--bold-font);
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer {
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 0px -2px 3px #f1f1f1;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px;
+}
+
+.footer-ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
