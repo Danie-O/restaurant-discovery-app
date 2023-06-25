@@ -33,7 +33,7 @@
                 <a href="{{ url_for('discounts') }}" class="nav-link" id="nav-link">Discounts</a>
             </li>
             <li class="nav-item active">
-                <a href="{{ url_for('contact') }}" class="nav-link" id="nav-link">Contact</a>
+                <a href="{{ url_for('contact') }}" class="nav-link CTA" id="nav-link">Subscribe</a>
             </li>
         </ul>
         <!-- <div class="hamburger" id="hamburger">
@@ -48,7 +48,7 @@
             <center class="subscribe">
                 <h1>Subscribe to our weekly newsletter</h1>
                 <!-- <hr> -->
-                <form action="" method="post">
+                <form action="/subscription/" method="post">
                     <input type="text" name="name" placeholder="Name">
                     <br><br>
                     <input type="email" name="email" placeholder="Email">
@@ -57,9 +57,23 @@
                     <br><br> -->
                     <input type="text" name="location" placeholder="City, Country">
                     <br><br>
+                    {% if success %}
+                        <div class="success">
+                            You have successfully subscribed to our newsletter!
+                        </div>
+                    {% endif %}
+
+                    {% if error %}
+                        <div class="error">
+                            Error encountered. Please try again.
+                        </div>
+                    {% endif %}
                     <input type="submit" name="subscribe">
                 </form>
             </center>
+
+            
+            <!-- <div class="enquiry"></div> -->
         </div>
     </section>
 
