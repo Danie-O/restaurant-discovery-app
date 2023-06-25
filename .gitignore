@@ -3,3 +3,6 @@
 
 # .pyc cache files
 __pycache__
+
+# config file containing email and password
+config.py
