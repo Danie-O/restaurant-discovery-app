@@ -19,6 +19,10 @@
     transition: var(--transition);
 }
 
+body {
+    background-color: rgb(243, 248, 252);
+}
+
 nav {
     background: #fff;
     display: flex;
@@ -49,8 +53,12 @@ nav {
     list-style-type: none;
 }
 
-.navbar-ul > .active > a{
+.navbar-ul > .active > a {
     color: var(--secondary-color);
+}
+
+.navbar-ul > .active > .CTA {
+    color: white;
 }
 
 .nav-item {
@@ -62,6 +70,20 @@ nav {
     font-weight: var(--bold-font);
     font: 500 100%/1.5 system-ui;
 }
+
+.CTA {
+    /* border: 3px solid var(--tertiary-color); */
+    border-radius: 20px;
+    padding: 0.8rem 0.7rem;
+    color: white;
+    background-color: var(--tertiary-color);
+}
+
+.CTA:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
 
 a {
     text-decoration: none;
@@ -106,6 +128,7 @@ a:hover {
 .hero p {
     line-height: var(--line-height);
     color: #5b6574;
+    margin-bottom: 0.8rem;
 }
 
 .anchor-text {
@@ -122,9 +145,10 @@ a:hover {
 .action-btn {
     margin-top: 1rem;
     display: inline-block;
-    padding: 0.9rem 0.8rem;
+    padding: 0.9rem 0.9rem;
     border: none;
     font-size: 1.2rem;
+    font-weight: 600;
     border-radius: 20px;
     color: #fff;
     background-color: var(--secondary-color);
@@ -250,7 +274,7 @@ footer {
     width: 100%;
     padding: 15px;
     margin-top: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -276,4 +300,8 @@ footer {
     font-size: 20px;
     padding: 20px 0 20px 0;
     border-bottom: 1px solid rgb(129, 176, 133);
+}
+
+.error {
+    color: red;
 }
